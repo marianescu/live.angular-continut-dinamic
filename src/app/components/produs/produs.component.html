@@ -1,0 +1,9 @@
+<div [ngClass]="{'stoc-limitat':stoc<10}" class="produs">
+    <div *ngIf="pretOferta" class="offer">OFERTA</div>
+    <img class="imagine" [src]="poza">
+    <div class="info">
+        <div [ngStyle]="{'color':nameClr}" class="nume">{{nume}}</div>
+        <div *ngIf="pretOferta" class="pret-vechi">{{pret}}</div>
+        <div class="pret">{{getCurrentPrice()}}</div>
+    </div>
+</div>

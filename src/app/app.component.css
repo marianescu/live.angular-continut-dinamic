@@ -1,0 +1,12 @@
+.lista-produse{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap:12px;
+    flex-wrap: wrap;
+}
+
+.produs{
+    width:23%;
+}
